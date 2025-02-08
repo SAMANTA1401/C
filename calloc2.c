@@ -8,7 +8,7 @@ int main()
     printf("How many integer you want to enter\n");
     scanf("%d", &n);
 
-    ptr = (int *)calloc(n, sizeof(int));
+    ptr = (int *)calloc(n, sizeof(int)); // dynamic contiguous memory allocation for array of n elements
 
     for (int i = 0; i < n; i++)
     {
