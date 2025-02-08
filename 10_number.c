@@ -7,7 +7,7 @@ main()
     {
         printf("%d ", i);
         i = i + 2;
-        if (i >= 20)
+        if (i > 20)
             goto outside;
     }
 outside:
