@@ -7,17 +7,17 @@ int main()
 {
     int x=3, y=4;
     printf("The value of a and b is %d and %d\n",x,y);
-    wrong_swap(x,y); // call by value
+    wrong_swap(x,y); // call by value pass value as argument
     printf("The value of a and b is %d and %d\n", x, y);
-    swap(&x,&y);  // call by referance
+    swap(&x,&y);  // call by referance pass address as argument
     printf("The value of a and b is %d and %d\n", x, y);
 
     return 0;
 }
-void swap(int *a, int *b){
+void swap(int *a, int *b){ // pointer point address
     int temp;
-    temp = *a;
-    *a = *b;
+    temp = *a; // value of address by pointer a
+    *a = *b; // value of address by pointer b assigned to pointer a
     *b = temp;
     printf("%d and %d\n ", *a, *b);
 }

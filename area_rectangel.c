@@ -8,7 +8,7 @@ void main(){
     float peri, are;
     printf("Enter the length and breadth: ");
     scanf("%f %f", &len, &bre); //store input val to address // enter 2 input with space
-    //function call
+    //function call by reference
     periarea(len,bre,&peri,&are); // passing val of len and bre and address of peri and are to the pointer
 
     printf("\nPerimeter of the rectangle is %f metres", peri); // print val or peri

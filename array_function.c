@@ -26,6 +26,8 @@ int main(){
     printf("%u \n", &arr[0]); // print address of the first element
     printf("%u \n", &arr[7]); // print address of the last element
     printf("%d \n", arr[7]); // print  last element
+    printf("%d \n", *arr); // print first element value
+    printf("%d \n", *(arr + 1)); // print second element value
 
     int *ptr = arr; // store first element address to ptr pointer
     int *ptr2;

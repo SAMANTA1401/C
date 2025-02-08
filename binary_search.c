@@ -44,10 +44,14 @@ int main()
 {
     // sorted array for binary search
     int arr[] = {1, 4, 6, 8, 23, 45, 67, 90, 123};
-    int size = sizeof(arr) / sizeof(int);
+    int size = sizeof(arr) / sizeof(int); // 36 bytes/ 4 bytes(int4) 1bytes = 8 bits
     int element = 90;
     int searchIndex = binarySearch(arr, size, element);
     printf("The element %d was found at index %d \n", element, searchIndex);
-
     return 0;
 }
+
+// Suppose we have an 8 - bit signed integer : Maximum positive value : 127(01111111)Minimum negative value : 
+// -128(10000000)And an 8 - bit unsigned integer : Maximum value : 255(11111111)Minimum value : 0(00000000)In
+//  summary, signed numbers can represent both positive and negative numbers, while unsigned numbers can 
+//  represent only positive numbers.
