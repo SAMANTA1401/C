@@ -9,8 +9,8 @@ int main()
     for (int i = 0; i < 4; i++)
     {
         printf("Enter the value of marks for student %d: ", i + 1);
-        scanf("%d \n", ptr);
-        ptr ++;
+        scanf("%d", ptr); // ptr store address of marks to which we input marks values
+        ptr++;               // increment pointer to next address of the array
     }
     for (int i = 0; i < 4; i++)
     {
